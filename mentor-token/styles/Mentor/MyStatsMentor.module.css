@@ -1,0 +1,345 @@
+
+.container {
+  min-height: 100vh;
+  background: #F6F7FF;
+  display: flex;
+}
+
+
+.sidebar {
+  width: 260px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 16px rgba(160, 163, 189, 0.07);
+  min-height: 100vh;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.logoText {
+  color: #696CFF;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 0.75rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 17px;
+  color: #566A7F;
+  background: none;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.navButtonActive {
+  background: #F6F7FF;
+  color: #696CFF;
+}
+
+.navButton:hover:not(.navButtonActive) {
+  background: #F6F7FF;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  color: #696CFF;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  text-decoration: underline;
+}
+
+
+.main {
+  flex: 1;
+  background: #F8F8FB;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem 1.5rem 3rem;
+}
+
+.searchContainer {
+  position: relative;
+  width: 420px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  border-radius: 30px;
+  background: #fff;
+  color: #23272E;
+  font-size: 17px;
+  font-weight: 500;
+  box-shadow: 0 2px 16px rgba(160, 163, 189, 0.07);
+  border: none;
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.profileRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileName {
+  color: #23272E;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.profileRole {
+  color: #A0A3BD;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+
+.statsSection {
+  padding: 0 3rem 2.5rem 3rem;
+}
+
+.statsTitle {
+  color: #23272E;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.statsRow {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+
+.profileCard {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  box-shadow: 0 2px 16px rgba(160, 163, 189, 0.07);
+  min-height: 260px;
+}
+
+.profileAvatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3f3;
+}
+
+.profileNameRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.profileJob {
+  color: #696CFF;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.profileContact {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #A0A3BD;
+  font-size: 15px;
+  margin-bottom: 0.25rem;
+}
+
+
+.aboutCard {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem;
+  flex: 1;
+  box-shadow: 0 2px 16px rgba(160, 163, 189, 0.07);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+}
+
+.aboutHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.aboutTitle {
+  color: #696CFF;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.aboutSkills {
+  font-weight: 600;
+  color: #23272E;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.aboutText {
+  color: #A0A3BD;
+  font-size: 15px;
+}
+
+
+.performanceQuickRow {
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+.performanceCard {
+  flex: 0;
+}
+
+.performanceTitle {
+  color: #23272E;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.performanceInner {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(160, 163, 189, 0.07);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.performanceStats {
+  margin-bottom: 1rem;
+}
+
+.performanceStatsTitle {
+  color: #23272E;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.performanceStatsDesc {
+  color: #A0A3BD;
+  font-size: 14px;
+}
+
+
+.performanceChart svg path {
+  stroke-width: 1.2 !important;
+}
+
+
+.quickOverview {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.quickOverviewTitle {
+  color: #23272E;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.quickOverviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quickOverviewItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #F6F7FF;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.quickOverviewItemFinished {
+  background: #696CFF;
+}
+
+.quickOverviewItem span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #23272E;
+}
+
+.quickOverviewItem .quickOverviewValue {
+  color: #696CFF;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+.quickOverviewItemFinished span {
+  color: #fff;
+}

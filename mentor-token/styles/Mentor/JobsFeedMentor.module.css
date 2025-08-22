@@ -1,0 +1,470 @@
+.bg {
+  min-height: 100vh;
+  background: #f7f7fb;
+  display: flex;
+}
+
+.sidebar {
+  width: 260px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+  min-height: 100vh;
+  box-shadow: 0 2px 16px 0 rgba(105,108,255,0.07);
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 2.5rem;
+}
+
+.logoText {
+  color: #696CFF;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: auto;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #566A7F;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.navButton:hover {
+  background: #F6F7FF;
+}
+
+.navButtonActive {
+  background: #E6E9FF;
+  color: #696CFF;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+  color: #696CFF;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  transition: text-decoration 0.15s;
+}
+
+.logoutButton:hover {
+  text-decoration: underline;
+}
+
+.main {
+  flex: 1;
+  background: #f7f7fb;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.searchWrap {
+  position: relative;
+  width: 420px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.85rem 1rem 0.85rem 2.7rem;
+  border-radius: 30px;
+  background: #fff;
+  color: #23272E;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 2px 8px 0 rgba(76, 110, 245, 0.04);
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.profileRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profileName {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.2;
+}
+
+.profileRole {
+  font-size: 0.85rem;
+  margin-top: 0.1rem;
+  line-height: 1.2;
+}
+
+
+.profileImg {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 44px;
+  height: 44px;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  color: #23272E;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filtersRow {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filterLabel {
+  color: #A0A3BD;
+  font-size: 0.97rem;
+}
+
+.filterBtn {
+  background: #f7f7fb;
+  border: none;
+  border-radius: 7px;
+  padding: 0.38rem 1.1rem 0.38rem 0.8rem;
+  font-size: 0.97rem;
+  color: #23272E;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.filterBtn:hover {
+  background: #F6F7FF;
+}
+
+.filtersBtn {
+  background: #f7f7fb;
+  border: none;
+  border-radius: 7px;
+  padding: 0.38rem 1.4rem;
+  font-size: 0.97rem;
+  color: #696cff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.filtersBtn:hover {
+  background: #F6F7FF;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 2.3rem;
+  left: 3rem;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 4px 16px 0 rgba(105,108,255,0.13);
+  min-width: 120px;
+  z-index: 10;
+  padding: 0.3rem 0;
+}
+
+.dropdownMenu li {
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+  font-size: 0.97rem;
+  color: #23272E;
+  transition: background 0.13s;
+ 
+}
+
+.dropdownMenu li:hover,
+.dropdownActive {
+  background: #f7f7fb;
+  color: #696cff;
+}
+
+.gridBtn {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(76, 110, 245, 0.04);
+  transition: background 0.15s;
+}
+
+.gridBtn:hover {
+  background: #F6F7FF;
+}
+
+.jobsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+
+
+.jobCard {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px 0 rgba(105,108,255,0.07);
+  padding: 1.3rem 1.2rem 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.jobHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.jobLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #f7f7fb;
+}
+
+.jobCompany {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #23272E;
+}
+
+.jobTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #566A7F;
+}
+
+.jobDesc {
+  color: #A0A3BD;
+  font-size: 0.98rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
+}
+
+.viewBtn {
+  background: #696CFF;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.6rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.18s;
+}
+.viewBtn:hover {
+  background: #5a5ed8;
+}
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(34, 34, 34, 0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBox {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  min-width: 350px;
+  max-width: 370px;
+  width: 100%;
+  box-shadow: 0 4px 32px 0 rgba(105,108,255,0.13);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: fadeIn 0.2s;
+}
+
+
+.closeBtn {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #A0A3BD;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.15s;
+}
+.closeBtn:hover {
+  color: #696cff;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.modalLogo {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #f7f7fb;
+}
+
+.modalCompany {
+  font-size: 1.13rem;
+  font-weight: 600;
+  color: #23272E;
+  margin-top: 0.2rem;
+}
+
+.modalTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #566A7F;
+  margin-bottom: 1.1rem;
+}
+
+.modalDesc {
+  color: #A0A3BD;
+  font-size: 0.98rem;
+  margin-bottom: 2.1rem;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.modalApplyBtn {
+  background: #696CFF;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.65rem 2.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.18s;
+}
+
+.modalApplyBtn:hover {
+  background: #5a5ed8;
+}
+
+.appliedMsg {
+  margin-top: 1rem;
+  color: #696cff;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #f7f7fb;
+  padding: 0.3rem 1.2rem;
+  border-radius: 8px;
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98);}
+  to { opacity: 1; transform: scale(1);}
+}
+
+  @media (max-width: 1400px) {
+    .jobsGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (max-width: 1100px) {
+    .jobsGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 900px) {
+    .jobsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 600px) {
+    .jobsGrid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }

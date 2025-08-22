@@ -1,0 +1,287 @@
+.container {
+  min-height: 100vh;
+  background: #F6F7FF;
+  display: flex;
+}
+
+.sidebar {
+  width: 260px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 16px rgba(160, 163, 189, 0.07);
+  min-height: 100vh;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.logoText {
+  color: #696CFF;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 0.75rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 17px;
+  color: #566A7F;
+  background: none;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.navButtonActive {
+  background: #F6F7FF;
+  color: #696CFF;
+}
+
+.navButton:hover:not(.navButtonActive) {
+  background: #F6F7FF;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  color: #696CFF;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  text-decoration: underline;
+}
+
+
+.main {
+  flex: 1;
+  background: #F8F8FB;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem 1.5rem 3rem;
+}
+
+.searchContainer {
+  position: relative;
+  width: 420px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  border-radius: 30px;
+  background: #fff;
+  color: #23272E;
+  font-size: 17px;
+  font-weight: 500;
+  box-shadow: 0 2px 16px rgba(160, 163, 189, 0.07);
+  border: none;
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.profileRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileName {
+  color: #23272E;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.profileRole {
+  color: #A0A3BD;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+/* Main Grid */
+.mainGrid {
+  display: flex;
+  flex-direction: row;
+  padding: 0 3rem 2.5rem 3rem;
+  gap: 2rem;
+}
+
+/* Assigned Jobs */
+.assignedJobs {
+  flex: 1;
+  max-width: 600px;
+}
+
+.sectionTitle {
+  color: #23272E;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tabButton {
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: #A0A3BD;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tabButtonActive {
+  color: #696CFF;
+  border-bottom: 2px solid #696CFF;
+}
+
+.jobList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.jobCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(76, 110, 245, 0.04);
+  border: 1px solid #F0F0F5;
+  padding: 1rem 1.5rem;
+}
+
+.jobName {
+  color: #23272E;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.jobStatus {
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 90px;
+  text-align: center;
+  display: inline-block;
+}
+
+.statusDone {
+  background: #E6F9F0;
+  color: #3AC977;
+}
+
+.statusRejected {
+  background: #FFE6E6;
+  color: #FF6B6B;
+}
+
+.statusInProgress {
+  background: #E6E9FF;
+  color: #696CFF;
+}
+
+
+.pendingAppsCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sectionDesc {
+  color: #A0A3BD;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+
+.pendingActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.acceptBtn {
+  background: #696CFF;
+  color: #fff;
+  padding: 0.375rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.acceptBtn:hover {
+  background: #5a5ae6;
+}
+
+.rejectBtn {
+  background: #fff;
+  color: #FF6B6B;
+  border: 1px solid #FF6B6B;
+  padding: 0.375rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.rejectBtn:hover {
+  background: #FFF0F0;
+}
+
+.applicationIcon {
+  margin-left: 0.5rem;
+}

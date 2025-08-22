@@ -1,0 +1,124 @@
+.pageBg {
+  min-height: 100vh;
+  background: #F5F5F7;
+}
+
+.mainSection {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+}
+
+.container {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formCard {
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+  box-shadow: 0 2px 16px rgba(160, 163, 189, 0.07);
+}
+
+.headerText {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #18181b;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  color: #374151;
+  font-size: 1rem;
+  max-width: 48rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .inputGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.input {
+  height: 3rem;
+  background: #fff;
+  border: 1px solid #696CFF;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  color: #18181b;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input:focus {
+  border-color: #696CFF;
+}
+
+.textarea {
+  background: #fff;
+  border: 1px solid #696CFF;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: #18181b;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  resize: none;
+  min-height: 20rem;
+  transition: border 0.2s;
+  
+}
+
+.textarea:focus {
+  border-color: #696CFF;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitBtn {
+  background: #696CFF;
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  transition: background 0.2s;
+  width: 14rem;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background: #5a5ed8;
+}
